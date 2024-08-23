@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .page-heading{
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .know-more{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            height: 50px;
+            width: 50px;
+            background-color: #ffc299 ;
+            border-radius: 50px;
+            padding: 10px;
+            border: 2px solid #ff751a;
+            cursor: pointer;
+        }
+
+        .vegetable{
+            width: 450px;
+        }
+
+          .header-content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            
+
+          }
+
+          .content{
+            width: 450px;
+            font-size: 22px;
+          }
+        
+          .navbar{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            padding: 5px 40px;
+            color: white;
+
+          }
+
+          .vegetabel-emoji{
+            font-size: 50px;
+          }
+
+          .menus{
+            margin-left: 150px;
+            display: flex;
+            align-items: center;
+          }
+
+          .menu-item{
+            margin-right: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            
+          }
+
+          .menu-item:hover{
+            color: #ff751a;
+          }
+
+          .menu-icon{
+            height: 25px;
+            width: 25px;
+            margin-right: 5px;
+          }
+
+       /* Mobile Device */
+       @media screen and (max-width: 500px) {
+       .page-heading{
+        font-size: 35px;
+       }
+
+       .know-more{
+        height: 30px;
+        width: 30px;
+       }
+
+       .vegetable{
+        width: 250px;
+       }
+
+       .content{
+        font-size: 18px;
+       }
+
+       .vegetabel-emoji{
+        font-size: 18px;
+       }
+
+       .menus{
+        margin-left: 20px;
+       }
+
+       .menu-text{
+        display: none;
+       }
+
+       .menu-item{
+        margin-right: 13px;
+       }
+
+       .menu-icon{
+            height: 30px;
+            width: 30px;
+            margin-right: 5px;
+          }
+       }
+        
+    
+        /* Tablet Device */
+        @media screen and (min-width: 501px) and (max-width: 768px) {
+       .page-heading{
+        font-size: 45px;
+       }
+
+       .know-more{
+        height: 40px;
+        width: 40px;
+       }
+       }
+
+         /* Desktop  Device */
+         @media screen and (min-width: 769px) {
+            
+         }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+   <span class="vegetabel-emoji" >
+    <h5>Book store</h5>
+   </span>
+
+   <div class="menus">
+    <span class="menu-item">
+      <img src="./img/biobook.png" class="menu-icon" alt="Vegetables">
+      <span class="menu-text">
+      Bio
+      </span>
+    </span>
+    <span class="menu-item">
+      <img src="./img/chemistry.png" class="menu-icon" alt="Fruits">
+      <span class="menu-text">
+      Chem
+      </span>
+    </span>
+    <span class="menu-item">
+      <img src="./img/history.png" class="menu-icon" alt="Juice fruites">
+      <span class="menu-text">
+      History
+      </span>
+    </span>
+    <span class="menu-item">
+      <img src="./img/pro.png" class="menu-icon" alt="Organic">
+      <span class="menu-text">
+      programimg
+    </span>
+    </span>
+    <span class="menu-item">
+      <img src="./img/history.png" class="menu-icon" alt="Food">
+      <span class="menu-text">
+      sport 
+      </span>
+    </span>
+
+   </div>
+    </div>
+<h1 class="page-heading">
+    Book Store</h1>
+
+    <div class="header-content">
+        <img src="./img/bookstore.jfif" class="vegetable" alt="Available Vegetable's">
+
+        <div class="content">
+ <p>
+    Bookstore gives you an online shopping cart and point-of-sale system for your school's bookstore.
+     Online shoppers can browse and purchase items via the shopping interface or via Buy Now links for
+      individual items embedded on other sites. In-person sales can be handled using Point of Sale,
+       which works with USB barcode scanners and credit card readers. Students who want to pay later 
+       can charge their Bookstore orders to their accounts. On the back end, you can manage inventory,
+        process online orders, and run sales reports. Additionally, all Bookstore transactions are
+         automatically fed into your General Ledger.
+ </p>
+        </div>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Grocery_store" target="_blank">
+        <img src="./img/user-interface.png" class="know-more" alt="Click here to know more"/>
+</a>
+</body>
+</html>
